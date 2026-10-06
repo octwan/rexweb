@@ -66,7 +66,7 @@
   <main>
     <div class="policy">
       <h1>Privacy Policy</h1>
-      <p class="updated">Last updated: September 21, 2026</p>
+      <p class="updated">Last updated: October 6, 2026</p>
 
       <p>
         By default, rex stores what you add - titles, notes, ratings, tags,
@@ -81,7 +81,8 @@
         <li>No analytics, crash reporting, or usage tracking.</li>
         <li>No ads, and no third-party ad or tracking SDKs.</li>
         <li>No data is sold to anyone, ever.</li>
-        <li>No server or account system today - your data stays on your device unless you choose to share or export it yourself.</li>
+        <li>No server or account system today - your list stays on your device unless you choose to share or export it yourself.</li>
+        <li>Optional lookups (finding a book, movie, place, and so on) send only the text you search for to that catalog service - never your list.</li>
       </ul>
 
       <h2>Data storage</h2>
@@ -89,14 +90,61 @@
         By default, your recommendations (titles, categories, ratings,
         notes, tags, and similar details) and, if you choose to set them, an
         optional profile name and email are stored in a local database on
-        your device. Deleting the app, or using Settings &rarr; Delete all
-        data inside the app, permanently erases this data.
+        your device, along with app preferences such as your theme.
+        Deleting the app, or using Settings &rarr; Delete all data inside
+        the app, permanently erases your list and profile.
       </p>
       <p>
         If rex ever adds an optional way to back up or sync your data - for
         example, across your own devices, or a sign-in to make that possible
         - it will be off by default, clearly explained, and this policy will
         be updated before that feature is available, not after.
+      </p>
+
+      <h2>Optional lookups and online content</h2>
+      <p>
+        A few optional features connect to third-party services. rex has no
+        server of its own in between, so these requests go straight from
+        your device to the service, which - like any website - receives your
+        device's IP address and basic request details along with them. Each
+        service's own privacy policy covers what it does with that.
+      </p>
+      <ul>
+        <li>
+          <strong>Title lookup.</strong> When you tap the search icon in a
+          Rex's title field, rex sends the text you typed to the catalog for
+          that category:
+          <a href="https://www.themoviedb.org/privacy-policy">TMDB</a>
+          (movies and TV shows),
+          <a href="https://archive.org/about/terms.php">Open Library</a>
+          (books),
+          <a href="https://www.apple.com/legal/privacy/">Apple's iTunes Search</a>
+          (podcasts),
+          <a href="https://metabrainz.org/privacy">MusicBrainz and the Cover Art Archive</a>
+          (music), or
+          <a href="https://osmfoundation.org/wiki/Privacy_Policy">OpenStreetMap's Nominatim</a>
+          (restaurants, bars, and coffee shops). Results, including cover
+          images, load from those services. Nothing else about you or your
+          list is sent, and nothing is sent until you tap search.
+        </li>
+        <li>
+          <strong>Maps.</strong> When you view a Rex with a saved place, its
+          map is loaded from
+          <a href="https://osmfoundation.org/wiki/Privacy_Policy">OpenStreetMap's</a>
+          tile servers.
+        </li>
+        <li>
+          <strong>Recipe import.</strong> When you paste a recipe link and
+          import it, rex fetches that one page to read the recipe from it.
+        </li>
+        <li>
+          <strong>Links.</strong> Opening a link from a Rex opens it in your
+          device's browser, under that website's own policies.
+        </li>
+      </ul>
+      <p>
+        Whatever you pick from a lookup is saved only in your local list.
+        All of these connections use encryption (HTTPS).
       </p>
 
       <h2>Camera permission (Scan a Rex)</h2>
@@ -114,8 +162,10 @@
       <p>
         rex lets you share a recommendation, or your whole list, as text, an
         image, a file, or a QR code - but only when you choose to and only
-        through your device's own share sheet, clipboard, or file system. As
-        of today, none of this goes through a rex-operated server. What
+        through your device's own share sheet, clipboard, or file system.
+        Text you share into rex from another app is handled the same way,
+        on your device. As of today, none of this goes through a
+        rex-operated server. What
         happens to a shared file or message afterward (e.g. if you send it
         over a messaging app) is governed by that app's own privacy policy,
         not rex's.
